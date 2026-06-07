@@ -1,6 +1,6 @@
 # 📊 Google Analytics Revenue & Conversion Analytics with BigQuery
 
-Business-oriented analytics project using Google BigQuery and SQL to analyze revenue generation, conversion behavior, acquisition channels, user engagement, and customer journeys from the Google Analytics Sample Dataset.
+Business-oriented analytics project using BigQuery, SQL, ARRAY, STRUCT, UNNEST, conversion analysis and revenue insights from Google Analytics sample data.
 
 ![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
