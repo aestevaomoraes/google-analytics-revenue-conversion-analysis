@@ -1,6 +1,10 @@
-# 📊 Google Analytics Revenue & Conversion Analysis
+# 📊 Google Analytics Revenue & Conversion Analytics with BigQuery
 
 Business-oriented analytics project using Google BigQuery and SQL to analyze revenue generation, conversion behavior, acquisition channels, user engagement, and customer journeys from the Google Analytics Sample Dataset.
+
+![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Analytics](https://img.shields.io/badge/Analytics-FF6F00?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
 ---
 
@@ -47,6 +51,17 @@ bigquery-public-data.google_analytics_sample.ga_sessions_*
 ---
 
 ## 🛠️ Technologies & SQL Techniques
+
+### ⭐ Advanced BigQuery Features
+
+This project demonstrates practical usage of:
+
+- Nested Data Analysis
+- STRUCT fields
+- ARRAY fields
+- UNNEST()
+- Session-level analytics
+- Revenue attribution
 
 ### Technologies
 
@@ -100,6 +115,40 @@ bigquery-public-data.google_analytics_sample.ga_sessions_*
 
 ---
 
+## 📊 Visual Evidence
+
+### Landing Pages Revenue Analysis
+
+![Landing Pages Revenue](images/results/landing_pages_revenue.png)
+
+### Channel Conversion Analysis
+
+![Channel Conversion](images/results/channel_conversion_analysis.png)
+
+### Device Conversion Analysis
+
+![Device Conversion](images/results/device_conversion_analysis.png)
+
+### User Engagement Revenue Analysis
+
+![Engagement Revenue](images/results/engagement_revenue_analysis.png)
+
+---
+
+## 💡 Business Impact
+
+The analysis revealed that:
+
+- Traffic volume alone is not a reliable performance indicator.
+- Referral channels generated the highest conversion efficiency.
+- The homepage plays a key role in revenue generation.
+- Desktop users contributed most purchasing sessions.
+- User engagement patterns were not directly correlated with revenue generation.
+
+These findings support more efficient marketing investments and customer journey optimization.
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -109,10 +158,13 @@ google-analytics-revenue-conversion-analysis
 │   └── architecture.md
 │
 ├── images/
-│   └── project_architecture.png
-│
-├── insights/
-│   └── business_findings.md
+│   ├── project_architecture.png
+│   └── results/
+│       ├── business_findings.md
+│       ├── channel_conversion_analysis.png
+│       ├── device_conversion_analysis.png
+│       ├── engagement_revenue_analysis.png
+│       └── landing_pages_revenue.png
 │
 ├── sql/
 │   ├── 01_revenue_sessions.sql
@@ -141,7 +193,7 @@ docs/architecture.md
 ### Business Findings
 
 ```text
-insights/business_findings.md
+images/results/business_findings.md
 ```
 
 ---
@@ -161,19 +213,20 @@ insights/business_findings.md
 - Conversion Analysis
 - Data Storytelling
 - Business Insight Generation
+- Analytics Engineering
 
 ---
 
 ## 👨‍💻 Author
 
-Antonio Estevao
+Antonio Estevao Moraes
 
-Business Analytics | SQL | BigQuery | Data Analytics
+Business Analytics | SQL | BigQuery | Analytics Engineering
 
 📍 Brazil
 
-🔗 GitHub:
+🔗 GitHub  
 https://github.com/aestevaomoraes
 
-🔗 LinkedIn:
+🔗 LinkedIn  
 https://www.linkedin.com/in/antonio-neto-09518686/
