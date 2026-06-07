@@ -1,6 +1,6 @@
 # 📊 Google Analytics Revenue & Conversion Analysis
 
-Business-oriented analytics project using Google BigQuery and SQL to analyze revenue generation, conversion behavior, acquisition channels, user engagement and customer journeys from the Google Analytics Sample Dataset.
+Business-oriented analytics project using Google BigQuery and SQL to analyze revenue generation, conversion behavior, acquisition channels, user engagement, and customer journeys from the Google Analytics Sample Dataset.
 
 ---
 
@@ -15,7 +15,7 @@ Business-oriented analytics project using Google BigQuery and SQL to analyze rev
 Companies often track website traffic but struggle to understand:
 
 - Which sessions generate revenue
-- Which channels convert best
+- Which acquisition channels convert best
 - Which landing pages drive purchases
 - How user behavior impacts conversion
 - Which devices contribute most to sales
@@ -26,7 +26,7 @@ This project transforms raw Google Analytics session data into actionable busine
 
 ## 📂 Dataset
 
-**Source**
+### Source
 
 Google Analytics Sample Dataset
 
@@ -34,55 +34,70 @@ Google Analytics Sample Dataset
 bigquery-public-data.google_analytics_sample.ga_sessions_*
 ```
 
-The dataset contains:
+### Dataset Characteristics
 
 - User sessions
-- Traffic sources
-- Devices
-- Revenue data
-- Nested arrays and structs
-- Page interactions
+- Traffic acquisition data
+- Device information
+- Revenue metrics
+- Nested fields (STRUCT)
+- Repeated fields (ARRAY)
+- Page interaction data
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies & SQL Techniques
+
+### Technologies
 
 - Google BigQuery
-- SQL
+- Standard SQL
+
+### SQL Techniques
+
 - CTEs
+- COUNT()
 - COUNTIF()
+- SUM()
+- ROUND()
 - ARRAY
 - STRUCT
 - UNNEST()
+
+### Analytics Techniques
+
 - Revenue Analysis
 - Conversion Analysis
 - Funnel Analysis
+- Landing Page Analysis
+- Device Analysis
+- Channel Performance Analysis
 
 ---
 
 ## 📈 Key Business Insights
 
-### Conversion Analysis
+### Conversion Performance
 
 - 1,711 sessions analyzed
 - 34 purchasing sessions
-- 1.99% conversion rate
+- 1.99% overall conversion rate
 
-### Homepage Impact
+### Revenue Drivers
 
 - Homepage was the main entry point among purchasing sessions
+- Revenue generation was concentrated in a small subset of sessions
 
-### Channel Performance
+### Acquisition Performance
 
 - The channel with the highest traffic volume was not the channel with the highest conversion rate
+- Referral traffic achieved the best conversion performance
 
-### Device Performance
+### Customer Behavior
 
 - Desktop users generated nearly all purchases
+- Medium-engagement users generated more revenue than highly engaged users
 
-### User Engagement
-
-- Medium-engagement users generated more revenue than high-engagement users
 ---
 
 ## 📁 Repository Structure
@@ -92,25 +107,38 @@ google-analytics-revenue-conversion-analysis
 
 ├── docs/
 │   └── architecture.md
-
+│
 ├── images/
 │   └── project_architecture.png
-
+│
 ├── insights/
 │   └── business_findings.md
-
+│
 ├── sql/
-│   └── analytical_queries.sql
-
+│   ├── 01_revenue_sessions.sql
+│   ├── 02_revenue_pages.sql
+│   ├── 03_device_conversion_analysis.sql
+│   ├── 04_checkout_funnel_analysis.sql
+│   ├── 05_top_landing_pages_revenue.sql
+│   ├── 06_channel_conversion_analysis.sql
+│   ├── 07_country_revenue_analysis.sql
+│   └── 08_engagement_revenue_analysis.sql
+│
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
-## 📄 Business Findings
+## 📄 Documentation
 
-Detailed business insights can be found here:
+### Architecture
+
+```text
+docs/architecture.md
+```
+
+### Business Findings
 
 ```text
 insights/business_findings.md
@@ -125,11 +153,14 @@ insights/business_findings.md
 - BigQuery
 - Nested Data Analysis
 - ARRAY & STRUCT
-- UNNEST
+- UNNEST()
+- COUNTIF()
+- CTEs
 - KPI Analysis
-- Conversion Analysis
 - Revenue Analysis
+- Conversion Analysis
 - Data Storytelling
+- Business Insight Generation
 
 ---
 
@@ -138,3 +169,11 @@ insights/business_findings.md
 Antonio Estevao
 
 Business Analytics | SQL | BigQuery | Data Analytics
+
+📍 Brazil
+
+🔗 GitHub:
+https://github.com/aestevaomoraes
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/antonio-neto-09518686/
